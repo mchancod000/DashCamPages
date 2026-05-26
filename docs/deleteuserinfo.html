@@ -1,60 +1,146 @@
-<!doctype html>
+ <!doctype html>
   <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Data Deletion - RoadReplay</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      body { max-width: 700px; margin: 2rem auto; padding: 0 1.5rem; font: 16px/1.7 system-ui, sans-serif; color: #222; }
-      h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
-      h2 { font-size: 1.1rem; margin-top: 2rem; }
-      a { color: #1a6fb5; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        background: #0e0e0e;
+        color: #d4d4d4;
+        padding: 2rem 1rem 4rem;
+      }
+
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid #2a2a2a;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0.25rem;
+      }
+
+      .meta {
+        font-size: 0.875rem;
+        color: #7a7a7a;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 2rem 0 0.75rem;
+        padding-left: 0.75rem;
+        border-left: 3px solid #2d7a47;
+      }
+
+      p { margin-bottom: 0.85rem; }
+
+      ul {
+        padding-left: 1.5rem;
+        margin-bottom: 0.85rem;
+      }
+
+      li { margin-bottom: 0.35rem; }
+
+      .steps {
+        background: #161616;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 1.1rem 1.25rem;
+        margin: 1rem 0 1.5rem;
+      }
+
+      .steps ol {
+        padding-left: 1.4rem;
+        margin: 0;
+      }
+
+      .steps li {
+        margin-bottom: 0.5rem;
+        color: #c8c8c8;
+      }
+
+      .note {
+        background: #141414;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        font-size: 0.875rem;
+        color: #9a9a9a;
+        margin: 1rem 0;
+      }
+
+      .contact-box {
+        margin-top: 2.5rem;
+        background: #161616;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 1.1rem 1.25rem;
+        font-size: 0.95rem;
+      }
+
+      .contact-box a {
+        color: #81b88b;
+        text-decoration: none;
+      }
+
+      .contact-box a:hover { text-decoration: underline; }
     </style>
   </head>
   <body>
-    <h1>RoadReplay — Data Deletion</h1>
+  <div class="wrapper">
+
+    <header>
+      <h1>Data Deletion</h1>
+      <p class="meta">App: RoadReplay &nbsp;·&nbsp; Last updated: May 26, 2026</p>
+    </header>
 
     <h2>Delete your account from within the app</h2>
-    <p>Open the <strong>RoadReplay</strong> app on your device, then go to
-    <strong>Settings → Delete Account and All Data</strong>.</p>
+    <p>The easiest way to delete your data is directly from the app. Open <strong>RoadReplay</strong> on your device and follow these steps:</p>
 
-    <p>Tapping this button will immediately and permanently:</p>
+    <div class="steps">
+      <ol>
+        <li>Tap the <strong>Settings</strong> icon</li>
+        <li>Scroll down to <strong>Delete Account and All Data</strong></li>
+        <li>Tap the button and confirm when prompted</li>
+      </ol>
+    </div>
+
+    <p>This will immediately and permanently:</p>
     <ul>
       <li>Delete all of your uploaded cloud clips from our servers</li>
       <li>Delete your account and sign-in information</li>
-      <li>Remove all associated metadata from our systems</li>
+      <li>Remove all associated metadata, session data, and entitlement records from our systems</li>
     </ul>
 
-    <p>Your local recordings stored on your device are not affected and must
-    be deleted manually through your device's gallery or file manager.</p>
-
-    <p><strong>This action cannot be undone.</strong></p>
-
-    <h2>Can't access the app?</h2>
-    </style>
-  </head>
-  <body>
-    <h1>RoadReplay — Data Deletion</h1>
-
-    <h2>Delete your account from within the app</h2>
-    <p>Open the <strong>RoadReplay</strong> app on your device, then go to
-    <strong>Settings → Delete Account and All Data</strong>.</p>
-
-    <p>Tapping this button will immediately and permanently:</p>
- <ul>
-      <li>Delete all of your uploaded cloud clips from our servers</li>
-      <li>Delete your account and sign-in information</li>
-      <li>Remove all associated metadata from our systems</li>
-    </ul>
-
-    <p>Your local recordings stored on your device are not affected and must
-    be deleted manually through your device's gallery or file manager.</p>
-
-    <p><strong>This action cannot be undone.</strong></p>
+    <div class="note">
+      Local recordings saved on your device are not affected — those are stored only on your phone and must be deleted through your device's gallery or file manager.
+    </div>
 
     <h2>Can't access the app?</h2>
-    <p>Email us at <a href="mailto:lucidariumsoftware@gmail.com">lucidariumsoftware@gmail.com</a>
-    with the subject line <strong>"Account Deletion Request"</strong> and we will manually
-    remove your data within 30 days.</p>
+    <p>If you no longer have access to the app, email us at the address below with the subject line <strong>"Account Deletion Request"</strong> and include the Google
+  account email address associated with your RoadReplay account. We will manually remove your data within 30 days.</p>
+
+    <div class="contact-box">
+      <strong>Contact us</strong><br>
+      <a href="mailto:lucidariumsoftware@gmail.com">lucidariumsoftware@gmail.com</a>
+    </div>
+
+  </div>
   </body>
   </html>
