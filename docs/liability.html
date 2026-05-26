@@ -1,27 +1,151 @@
-<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Disclaimer – Simple DashCam</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>body{max-width:800px;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui}</style>
-</head>
-<body>
-  <h1>Disclaimer</h1>
-  <p><strong>Last updated:</strong> 2025-08-22</p>
+  <head>                                                                                                                                                                         <meta charset="utf-8">
+    <title>Disclaimer - RoadReplay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <p>Simple DashCam is provided “as is” without warranties of any kind. You are solely responsible for how you use the app and any recordings you create.</p>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        background: #0e0e0e;
+        color: #d4d4d4;
+        padding: 2rem 1rem 4rem;
+      }
 
-  <h2>Legal compliance</h2>
-  <p>Recording laws vary by jurisdiction (e.g., consent for audio/video). You agree to comply with all applicable laws and obtain any required permissions.</p>
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+      }
 
-  <h2>No guaranteed outcomes</h2>
-  <p>We do not guarantee recording quality, availability, or fitness for a particular purpose.</p>
+      header {
+        border-bottom: 1px solid #2a2a2a;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
 
+      header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0.25rem;
+      }
+
+      .meta {
+        font-size: 0.875rem;
+        color: #7a7a7a;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+        font-weight: 600;
+         color: #ffffff;
+        margin: 2rem 0 0.75rem;
+        padding-left: 0.75rem;
+        border-left: 3px solid #2d7a47;
+      }
+
+      p { margin-bottom: 0.85rem; }
+
+      ul {
+        padding-left: 1.5rem;
+        margin-bottom: 0.85rem;
+      }
+
+      li { margin-bottom: 0.35rem; }
+
+      .note {
+        background: #141414;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        font-size: 0.875rem;
+        color: #9a9a9a;
+        margin: 1rem 0;
+      }
+
+      .contact-box {
+        margin-top: 2.5rem;
+        background: #161616;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 1.1rem 1.25rem;
+        font-size: 0.95rem;
+      }
+
+      .contact-box a {
+        color: #81b88b;
+        text-decoration: none;
+      }
+
+      .contact-box a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <header>
+      <h1>Disclaimer</h1>
+      <p class="meta">App: RoadReplay &nbsp;·&nbsp; Last updated: May 26, 2026</p>
+    </header>
+
+    <p>RoadReplay is provided as-is. We do not guarantee uninterrupted recording, uninterrupted cloud availability, or that the app will meet any specific legal, safety, or
+  evidentiary need.</p>
+
+    <h2>Legal compliance</h2>
+    <p>You are responsible for how you use the app, what you record, and whether recording audio, video, location, or cloud-backed footage is lawful where you drive. Laws
+  regarding dashcam recording, audio capture, and data storage vary by jurisdiction. It is your responsibility to comply with all applicable local, state, and national laws
+  before using this app.</p>
+
+    <h2>No guaranteed recording outcomes</h2>
+    <p>The app records to your device using the Android camera and storage system. Recording may be interrupted or fail due to device storage limits, system resource
+  constraints, app crashes, power loss, or manufacturer battery optimizations that kill background processes. We do not guarantee that any specific event will be captured or
+   preserved.</p>
+
+    <h2>No guaranteed cloud outcomes</h2>
+    <p>Cloud backup and clip recovery depend on a number of factors outside our control, including:</p>
+    <ul>
+      <li>Device state and available storage at the time of upload</li>
+      <li>Network availability and connection quality</li>
+      <li>Active premium subscription status</li>
+      <li>Google Sign-In session validity — an expired sign-in will pause uploads until you re-authenticate</li>
+      <li>Third-party platform availability (Google, Cloudflare, Backblaze B2)</li>
+      <li>Background upload scheduling, which is subject to Android OS power management and may be deferred</li>
+    </ul>
+    <p>Important clips should always be reviewed and managed by you. Do not rely solely on cloud backup for footage you cannot afford to lose.</p>
+
+    <h2>Storage limits and automatic deletion</h2>
+    <p>Premium cloud storage is capped at 25 GB per account. Unprotected clips are subject to automatic deletion after 14 days or when your storage exceeds the cap.
+  Protected clips are exempt from automatic retention removal, but are still subject to account-level deletion if you cancel your subscription or delete your account. We are
+   not responsible for clips lost due to retention policy enforcement, storage cap enforcement, or subscription lapse.</p>
+
+    <h2>Account deletion is permanent</h2>
+    <p>When you use the Delete Account and All Data feature in Settings, all cloud clips, account records, session data, and associated metadata are permanently and
+  irreversibly deleted from our servers. This action cannot be undone. Local recordings on your device are not affected, but cloud-backed footage will not be recoverable
+  after deletion.</p>
   <h2>Limitation of liability</h2>
-  <p>To the maximum extent permitted by law, we are not liable for any damages arising from use or inability to use the app.</p>
+    <p>To the fullest extent allowed by law, we are not responsible for:</p>
+    <ul>
+      <li>Lost, corrupted, or missing footage — whether local or cloud-backed</li>
+      <li>Missed recording events due to app or device failure</li>
+      <li>Failed, delayed, or incomplete uploads</li>
+      <li>Clips deleted by retention or storage cap enforcement</li>
+      <li>Clips lost due to account deletion, subscription cancellation, or inactivity</li>
+      <li>Subscription billing issues or Google Play disputes</li>
+      <li>Any loss, damage, or legal consequence arising from use or inability to use this app or its cloud services</li>
+    </ul>
 
-  <h2>Contact</h2>
-  <p>Questions? Email: <a href="mailto:phenomenologysoftware@gmail.com">phenomenologysoftware@gmail.com</a></p>
-</body>
-</html>
+    <div class="note">
+      This app is a consumer tool, not a certified safety or legal recording device. Do not rely on it as your sole means of capturing evidence for insurance, legal, or law
+  enforcement purposes.
+    </div>
+
+    <div class="contact-box">
+      <strong>Questions?</strong><br>
+      Email us at <a href="mailto:lucidariumsoftware@gmail.com">lucidariumsoftware@gmail.com</a>
+    </div>
+
+  </div>
+  </body>
+  </html>
