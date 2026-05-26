@@ -1,39 +1,337 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Privacy Policy – Simple DashCam</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>body{max-width:800px;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui}</style>
-</head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p><strong>App:</strong> DashCam Simple<br>
-     <strong>Last updated:</strong> 2025-08-22</p>
+ <!doctype html>
+  <html lang="en">
+  <head>                                                                                                                                                                         <meta charset="utf-8">
+    <title>Privacy Policy - RoadReplay</title>                                                                                                                                   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <h2>What this app does</h2>
-  <p>Simple DashCam records video and audio locally on your device using your camera and microphone.</p>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        background: #0e0e0e;
+        color: #d4d4d4;
+        padding: 2rem 1rem 4rem;
+      }
 
-  <h2>Data collection</h2>
-  <ul>
-    <li><strong>No personal data is sent to our servers.</strong> Recordings are saved locally (e.g., Movies/Dashcam).</li>
-    <li>We do not collect analytics, advertising IDs, or location.</li>
-  </ul>
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+      }
 
-  <h2>Permissions</h2>
-  <ul>
-    <li><strong>Camera</strong> – capture video.</li>
-    <li><strong>Microphone</strong> – capture audio.</li>
-    <li><strong>Notifications</strong> – foreground service status (Android).</li>
-  </ul>
+      header {
+        border-bottom: 1px solid #2a2a2a;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
 
-  <h2>Third-party sharing</h2>
-  <p>We do not share your data with third parties.</p>
+      header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0.25rem;
+      }
 
-  <h2>Data retention & control</h2>
-  <p>You can delete recordings at any time from within the app or your device’s file manager.</p>
+      .meta {
+        font-size: 0.875rem;
+        color: #7a7a7a;
+      }
 
-  <h2>Contact</h2>
-  <p>Questions? Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-</body>
-</html>
+      h2 {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 2rem 0 0.75rem;
+        padding-left: 0.75rem;
+        border-left: 3px solid #2d7a47;
+      }
+
+      p { margin-bottom: 0.85rem; }
+
+      ul {
+        padding-left: 1.5rem;
+        margin-bottom: 0.85rem;
+      }
+
+      li { margin-bottom: 0.35rem; }
+
+      .tier-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem 0 1.5rem;
+      }
+
+      @media (max-width: 540px) {
+        .tier-grid { grid-template-columns: 1fr; }
+      }
+
+      .tier-card {
+        background: #161616;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 1.1rem 1.2rem;
+      }
+
+      .tier-card h3 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+      }
+
+      .tier-card.free h3  { color: #6fa8dc; }
+      .tier-card.paid h3  { color: #81b88b; }
+
+      .tier-card ul {
+        padding-left: 1.2rem;
+        margin: 0;
+        font-size: 0.9rem;
+        color: #c0c0c0;
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 0.15em 0.5em;
+        border-radius: 4px;
+        margin-left: 0.35em;
+        vertical-align: middle;
+      }
+
+      .tag-free { background: #1b2f44; color: #6fa8dc; }
+      .tag-paid { background: #1b3325; color: #81b88b; }
+      .tag-both { background: #2a2a2a; color: #aaa; }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin: 1rem 0 1.25rem;
+      }
+
+      th {
+        text-align: left;
+        color: #aaa;
+        font-weight: 600;
+        border-bottom: 1px solid #2a2a2a;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+      }
+
+      td {
+        padding: 0.55rem 0.5rem 0.55rem 0;
+        border-bottom: 1px solid #1e1e1e;
+                color: #c8c8c8;
+        vertical-align: top;
+      }
+
+      td:first-child { color: #e0e0e0; font-weight: 500; width: 38%; }
+
+      .note {
+        background: #141414;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        font-size: 0.875rem;
+        color: #9a9a9a;
+        margin: 1rem 0;
+      }
+
+      .contact-box {
+        margin-top: 2.5rem;
+        background: #161616;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 1.1rem 1.25rem;
+        font-size: 0.95rem;
+      }
+
+      .contact-box a {
+        color: #81b88b;
+        text-decoration: none;
+      }
+
+      .contact-box a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta">App: RoadReplay &nbsp;·&nbsp; Last updated: May 26, 2026</p>
+    </header>
+<h2>What RoadReplay does</h2>
+    <p>RoadReplay is a dashcam app. It records video and audio to your device while you drive. A paid premium subscription adds Google sign-in and cloud backup so your clips
+   can be stored, restored, and managed across installs.</p>
+
+    <div class="tier-grid">
+      <div class="tier-card free">
+        <h3>Free tier</h3>
+        <ul>
+          <li>Records video and audio locally</li>
+          <li>Clips stay on your device</li>
+          <li>Optional live speed display</li>
+          <li>No account, no sign-in</li>
+          <li>No data leaves your device</li>
+        </ul>
+      </div>
+      <div class="tier-card paid">
+        <h3>Premium tier</h3>
+        <ul>
+          <li>Everything in Free, plus:</li>
+          <li>Google Sign-In</li>
+          <li>Cloud backup and restore</li>
+          <li>Cloud clip browser (view, protect, delete)</li>
+          <li>Loop recording mode</li>
+          <li>25 GB cloud storage cap</li>
+          <li>14-day rolling retention</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Data we collect</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>When</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Video and audio recordings</td>
+          <td>Always — stored locally on device <span class="tag tag-both">all tiers</span></td>
+        </tr>
+            <tr>
+          <td>Speed / location display data</td>
+          <td>Only if you enable the live speed overlay — never stored or transmitted <span class="tag tag-both">all tiers</span></td>
+        </tr>
+        <tr>
+          <td>Google account identity</td>
+          <td>Only when you sign in with Google — name, email, and Google ID used to identify your account and cloud clips <span class="tag tag-paid">premium</span></td>
+        </tr>
+        <tr>
+          <td>Google Play subscription state</td>
+          <td>Verified at sign-in and periodically to confirm active premium entitlement <span class="tag tag-paid">premium</span></td>
+        </tr>
+        <tr>
+          <td>Device identifier</td>
+          <td>A per-install identifier sent with API requests to associate this device with your cloud account <span class="tag tag-paid">premium</span></td>
+        </tr>
+        <tr>
+          <td>Cloud clip metadata</td>
+          <td>Upload time, file size, protection state, retention state, and storage usage totals <span class="tag tag-paid">premium</span></td>
+        </tr>
+        <tr>
+          <td>Backend error and audit logs</td>
+          <td>Operational logs kept server-side to diagnose service failures — not shared externally <span class="tag tag-paid">premium</span></td>
+        </tr>
+        <tr>
+          <td>Local diagnostics log</td>
+          <td>Written to your device only; shared manually via Settings → Share Diagnostics Log if you choose to send it for support <span class="tag tag-both">all
+  tiers</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Permissions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+           <td>Camera</td>
+          <td>Capture video while recording</td>
+        </tr>
+        <tr>
+          <td>Microphone</td>
+          <td>Capture audio while recording</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td>Optional — only used to display live speed on screen; never stored</td>
+        </tr>
+        <tr>
+          <td>Notifications</td>
+          <td>Show foreground recording service status on Android; alert you if cloud sign-in expires (premium)</td>
+        </tr>
+        <tr>
+          <td>Internet / network access</td>
+          <td>Upload clips and communicate with the cloud backend (premium only)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>How we use your data</h2>
+    <p>We use your data only to operate the app:</p>
+    <ul>
+      <li>Record and save dashcam clips on your device</li>
+      <li>Display optional live speed information</li>
+      <li>Authenticate you with Google and verify your subscription</li>
+      <li>Upload, list, protect, restore, preview, and delete cloud clips</li>
+      <li>Enforce storage limits, retention policies, and per-device access rules</li>
+      <li>Diagnose and resolve service failures through backend logs</li>
+    </ul>
+
+    <h2>Where data is stored</h2>
+    <p><strong>Free tier:</strong> All recordings stay on your device. Nothing is uploaded unless you export it yourself.</p>
+    <p><strong>Premium tier:</strong> Clips you back up are uploaded to our cloud backend (Cloudflare) and cloud object storage (Backblaze B2). Account, session,
+  entitlement, and clip metadata is stored in a backend database to run the service. Unprotected clips are automatically deleted after 14 days or when you exceed the 25 GB
+  storage cap. Protected clips are exempt from automatic retention removal.</p>
+
+    <h2>Third-party services</h2>
+    <p>The app relies on these providers. Each receives only the data needed to deliver its part of the service:</p>
+     <ul>
+      <li><strong>Google Sign-In</strong> — identity and OAuth token for authentication</li>
+      <li><strong>Google Play</strong> — subscription purchase verification</li>
+      <li><strong>Cloudflare</strong> — backend API hosting and database</li>
+      <li><strong>Backblaze B2</strong> — cloud object storage for clip files</li>
+    </ul>
+
+    <h2>Data sharing</h2>
+    <p>We do not sell personal data. We do not use advertising IDs or any ad network. Data is shared only with the service providers above, and only to the extent necessary
+  to deliver sign-in, subscription verification, backend operations, and cloud storage.</p>
+
+    <h2>Your controls</h2>
+    <ul>
+      <li><strong>Delete local recordings</strong> — delete clips directly from the app or your device gallery</li>
+      <li><strong>Delete cloud clips</strong> — delete individual clips from the cloud clips screen inside the app</li>
+      <li><strong>Sign out of Google</strong> — available in Settings; stops cloud access from this device</li>
+      <li><strong>Delete your account and all data</strong> — Settings → Delete Account and All Data permanently removes your cloud account, all uploaded clips, and all
+  associated records from our servers. Local recordings on your device are not affected.</li>
+      <li><strong>Cancel subscription</strong> — managed through Google Play</li>
+    </ul>
+
+    <div class="note">
+      Automatic retention: unprotected cloud clips may also be removed after 14 days or when your storage exceeds the 25 GB cap, regardless of cancellation or inactivity,
+  depending on your subscription state and storage policies.
+    </div>
+
+    <h2>Diagnostics</h2>
+    <p>The app writes a local diagnostics log to your device to help troubleshoot recording and upload issues. This log is never automatically transmitted. You can share it
+  manually via Settings → Share Diagnostics Log if you contact us for support. The backend also records operational error logs and audit events to investigate service
+  failures.</p>
+
+    <h2>Children</h2>
+    <p>RoadReplay is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes in a material way, we will update the date above. Continued use of the app after a policy update constitutes acceptance of the revised
+  terms.</p>
+
+    <div class="contact-box">
+      <strong>Questions or requests?</strong><br>
+      Email us at <a href="mailto:lucidariumsoftware@gmail.com">lucidariumsoftware@gmail.com</a>
+    </div>
+    </div>
+  </body>
+  </html>
